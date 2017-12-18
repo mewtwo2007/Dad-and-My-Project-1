@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="js/phaser.min.js"></script>
+	<style type="text/css">
+	body {
+		margin: 0;
+	}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+	var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {preload: preload, create: create, update: update});
+	var game = new Phaser.Game(800, 600, Phaser.AUTO,
+	
+	function mathRandomInt(a, b) {
+    if (a > b) {
+    // Swap a and b to ensure a is smaller.
+    var c = a;
+    a = b;
+    b = c;
+  }
+  return Math.floor(Math.random() * (b - a + 1) + a);
+}
+
+	function preload() {
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        this.scale.pageAlignHorizontally = true;
+        this.scale.pageAlignVertically = true;
+        this.scale.updateLayout( true );
+		
+	}
+
+	function create() {
+	
+	}
+
+	function update() {
+	
+	}
+
+</script>
+</body>
+</html>
