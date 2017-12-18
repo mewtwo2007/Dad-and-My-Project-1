@@ -29,17 +29,20 @@
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
         this.scale.updateLayout( true );
-		game.load.image("Green_Button", "Button_Green.png")
-		game.load.image("Blue_Button", "Button_Blue.png")
-		game.load.image("Red_Button", "Button_Red.png")
+		game.load.image("Green_Button", "assets/Button_Green.png")
+		game.load.image("Blue_Button", "assets/Button_Blue.png")
+		game.load.image("Red_Button", "assets/Button_Red.png")
 	}
 
 	function create() {
-	
+		Green_Button = game.add.sprite(0, 0, "Green_Button")
+		Red_Button = game.add.sprite(400,0,"Red_Button")
+		Blue_Button = game.add.sprite(200,300,"Blue_Button")
+		
 	}
 
 	function update() {
-	
+		
 	}
 
 </script>
