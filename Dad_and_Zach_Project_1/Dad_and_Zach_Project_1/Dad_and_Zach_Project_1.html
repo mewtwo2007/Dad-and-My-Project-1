@@ -32,13 +32,16 @@
 		game.load.image("Green_Button", "assets/Button_Green.png")
 		game.load.image("Blue_Button", "assets/Button_Blue.png")
 		game.load.image("Red_Button", "assets/Button_Red.png")
+		game.load.image("Green_Square", "assets/Green Square.png")
+		game.load.image("Blue_Square", "assets/Blue Square.png")
+		game.load.image("Red_Square", "assets/Red Square.png")
 	}
 
 	function create() {
+	    //create the sprites 
 		Green_Button = game.add.sprite(0, 0, "Green_Button")
 		Red_Button = game.add.sprite(533.333333333333334,0,"Red_Button")
 		Blue_Button = game.add.sprite(266.66666666667,0,"Blue_Button")
-		
 	}
 
 	function update() {
